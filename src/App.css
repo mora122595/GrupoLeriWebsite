@@ -1,0 +1,5 @@
+/* App.css - intentionally minimal, styles live in index.css and component classes */
+.App {
+    min-height: 100vh;
+    background: #ffffff;
+}
