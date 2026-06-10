@@ -303,8 +303,8 @@ export default function QuoteForm() {
           <div className="lg:hidden">
             <div className="grid grid-cols-3 border-y border-slate-200 divide-x divide-slate-200">
               {[
-                { value: "+30", label: lang === "es" ? "aÃ±os de experiencia" : "years of experience" },
-                { value: "MX/USA", label: lang === "es" ? "operaciÃ³n binacional" : "binational operation" },
+                { value: "+30", label: lang === "es" ? "años de experiencia" : "years of experience" },
+                { value: "MX/USA", label: lang === "es" ? "operación binacional" : "binational operation" },
                 { value: "24/7", label: lang === "es" ? "emergencias" : "emergencies" },
               ].map((item) => (
                 <div key={item.value} className="py-5 px-3 text-center">
@@ -321,7 +321,7 @@ export default function QuoteForm() {
             <div className="mt-10 grid sm:grid-cols-2 gap-px bg-slate-200 border border-slate-200">
               <div data-testid="contact-office-usa-mobile" className="bg-white px-6 py-8 text-center">
                 <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#0052FF] mb-2">
-                  USA Â· Laredo, TX
+                  USA · Laredo, TX
                 </p>
                 <img
                   src={`${process.env.PUBLIC_URL}/images/logo-leri-azul.png`}
@@ -341,7 +341,7 @@ export default function QuoteForm() {
               </div>
               <div data-testid="contact-office-mx-mobile" className="bg-white px-6 py-8 text-center">
                 <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#0052FF] mb-2">
-                  MX Â· Nuevo Laredo
+                  MX · Nuevo Laredo
                 </p>
                 <img
                   src={`${process.env.PUBLIC_URL}/images/logo-sv-azul.png`}
