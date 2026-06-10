@@ -131,10 +131,10 @@ export default function Navbar() {
             <button
               data-testid="mobile-menu-toggle"
               onClick={() => setOpen((v) => !v)}
-              className="lg:hidden p-2 text-white"
+              className="lg:hidden h-9 w-9 flex items-center justify-center text-white"
               aria-label="Menu"
             >
-              {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {open ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
             </button>
           </div>
         </div>
