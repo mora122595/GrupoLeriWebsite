@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GrupoLeriWebsite/static/css/main.0fd815be.css",
+    "main.js": "/GrupoLeriWebsite/static/js/main.0ae26446.js",
+    "index.html": "/GrupoLeriWebsite/index.html",
+    "main.0fd815be.css.map": "/GrupoLeriWebsite/static/css/main.0fd815be.css.map",
+    "main.0ae26446.js.map": "/GrupoLeriWebsite/static/js/main.0ae26446.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fd815be.css",
+    "static/js/main.0ae26446.js"
+  ]
+}
