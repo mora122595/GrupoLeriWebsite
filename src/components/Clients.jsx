@@ -5,7 +5,7 @@ import { useLanguage } from "../context/LanguageContext";
 const imagePath = (file) => `${process.env.PUBLIC_URL}/images/${file}`;
 
 const CLIENTS = [
-  { name: "MEXEX", note: "50 años", logo: imagePath("mexex.png") },
+  { name: "MEXEX", logo: imagePath("mexex.png") },
   { name: "Org@tec", logo: imagePath("orgatec.png") },
   { name: "KAZA Logistics", logo: imagePath("kaza.png") },
   { name: "Eclipse Mold, Inc.", logo: imagePath("exlipse.png") },
