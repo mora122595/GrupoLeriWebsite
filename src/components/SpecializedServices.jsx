@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
-const WAREHOUSE_IMG = `${process.env.PUBLIC_URL}/images/warehouse-logistics.jpeg`;
+const WAREHOUSE_IMG = `${process.env.PUBLIC_URL}/images/bodega.png`;
 
 export default function SpecializedServices() {
   const { lang, t } = useLanguage();
@@ -29,12 +29,23 @@ export default function SpecializedServices() {
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight leading-[1.05]">
               {t.specialized.title}
             </h2>
-            <div className="mt-8 sm:mt-12 overflow-hidden">
+            <div className="mt-8 sm:mt-12 group relative overflow-hidden border border-white/10 bg-slate-950 shadow-2xl shadow-blue-950/30">
               <img
                 src={WAREHOUSE_IMG}
-                alt="Logistics warehouse"
-                className="w-full h-44 sm:h-[420px] object-cover grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-700"
+                alt={lang === "es" ? "Bodega LERI con montacargas y mercancía paletizada" : "LERI warehouse with forklift and palletized goods"}
+                className="w-full h-52 sm:h-[430px] object-cover object-center saturate-[0.85] contrast-[1.06] brightness-[0.82] transition-all duration-700 group-hover:scale-[1.03] group-hover:saturate-100 group-hover:brightness-95"
               />
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#040B16]/80 via-[#040B16]/20 to-blue-500/10 mix-blend-multiply" />
+              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 bg-gradient-to-t from-[#040B16]/90 via-[#040B16]/55 to-transparent px-5 py-5">
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-blue-200/80">
+                    {lang === "es" ? "Bodega Laredo TX" : "Laredo TX Warehouse"}
+                  </p>
+                  <p className="mt-1 font-display text-lg font-light tracking-tight text-white">
+                    {lang === "es" ? "27,500 ft² de capacidad" : "27,500 ft² capacity"}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 

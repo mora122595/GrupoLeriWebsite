@@ -9,36 +9,36 @@ const API = BACKEND_URL ? `${BACKEND_URL}/api` : "";
 const FALLBACK_ITEMS = [
   {
     id: "fallback-1",
-    name: "Lorem Ipsum",
-    company: "Dolor Sit",
-    role_es: "Consectetur Adipiscing",
-    role_en: "Consectetur Adipiscing",
+    name: "Alejandro Ramírez",
+    company: "",
+    role_es: "Coordinador de Importaciones",
+    role_en: "Import Coordinator",
     quote_es:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sem at lorem luctus facilisis.",
+      "Su atención y capacidad de respuesta hacen la diferencia. Siempre recibimos la documentación correcta y a tiempo para mantener nuestras operaciones en marcha.",
     quote_en:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sem at lorem luctus facilisis.",
+      "Their attention and responsiveness make the difference. We always receive the correct documentation on time to keep our operations moving.",
   },
   {
     id: "fallback-2",
-    name: "Dolor Sit Amet",
-    company: "Lorem Ipsum",
-    role_es: "Sed Do Eiusmod",
-    role_en: "Sed Do Eiusmod",
+    name: "Carlos Martínez",
+    company: "",
+    role_es: "Gerente de Logística",
+    role_en: "Logistics Manager",
     quote_es:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Nuestra mercancía siempre llega en excelentes condiciones, incluso en operaciones especializadas. El cuidado, seguimiento y profesionalismo de Grupo LERI nos brindan total confianza.",
     quote_en:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Our goods always arrive in excellent condition, even in specialized operations. Grupo LERI's care, follow-up, and professionalism give us complete confidence.",
   },
   {
     id: "fallback-3",
-    name: "Consectetur Elit",
-    company: "Amet Dolor",
-    role_es: "Ut Labore Dolore",
-    role_en: "Ut Labore Dolore",
+    name: "Ana Rodríguez",
+    company: "",
+    role_es: "Coordinadora de Logística",
+    role_en: "Logistics Coordinator",
     quote_es:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Su flexibilidad y atención hacen la diferencia. Incluso fuera de horario, siempre encontramos apoyo y soluciones rápidas cuando más las necesitamos.",
     quote_en:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Their flexibility and attention make the difference. Even after hours, we always find support and quick solutions when we need them most.",
   },
 ];
 
@@ -75,6 +75,11 @@ export default function Testimonials() {
     setActiveIndex((current) => (current === items.length - 1 ? 0 : current + 1));
   };
 
+  const getAttribution = (tm) => {
+    const role = lang === "es" ? tm.role_es : tm.role_en;
+    return tm.company ? `${role} · ${tm.company}` : role;
+  };
+
   const renderCard = (tm, idx, extraClass = "") => (
     <article
       key={tm.id}
@@ -89,7 +94,7 @@ export default function Testimonials() {
         <div>
           <p className="font-medium text-sm text-slate-900">{tm.name}</p>
           <p className="text-xs text-slate-500 mt-1">
-            {lang === "es" ? tm.role_es : tm.role_en} · {tm.company}
+            {getAttribution(tm)}
           </p>
         </div>
       </div>
