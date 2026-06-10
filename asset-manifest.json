@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GrupoLeriWebsite/static/css/main.c8081b5c.css",
-    "main.js": "/GrupoLeriWebsite/static/js/main.0107b90f.js",
+    "main.css": "/GrupoLeriWebsite/static/css/main.1d393943.css",
+    "main.js": "/GrupoLeriWebsite/static/js/main.e44f1aac.js",
     "index.html": "/GrupoLeriWebsite/index.html",
-    "main.c8081b5c.css.map": "/GrupoLeriWebsite/static/css/main.c8081b5c.css.map",
-    "main.0107b90f.js.map": "/GrupoLeriWebsite/static/js/main.0107b90f.js.map"
+    "main.1d393943.css.map": "/GrupoLeriWebsite/static/css/main.1d393943.css.map",
+    "main.e44f1aac.js.map": "/GrupoLeriWebsite/static/js/main.e44f1aac.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8081b5c.css",
-    "static/js/main.0107b90f.js"
+    "static/css/main.1d393943.css",
+    "static/js/main.e44f1aac.js"
   ]
 }
