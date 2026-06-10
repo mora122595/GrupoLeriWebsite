@@ -86,7 +86,7 @@ export default function Navbar() {
             className="flex items-center gap-3 group"
           >
             <img
-              src="/images/logo_solo.png"
+              src={`${process.env.PUBLIC_URL}/images/logo_solo.png`}
               alt="Grupo LERI logo"
               className="h-9 w-[6.3rem] sm:h-12 sm:w-[8.4rem] object-fill object-left"
             />

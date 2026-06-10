@@ -2,17 +2,19 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
 
+const imagePath = (file) => `${process.env.PUBLIC_URL}/images/${file}`;
+
 const CLIENTS = [
-  { name: "MEXEX", note: "50 años", logo: "/images/mexex.png" },
-  { name: "Org@tec", logo: "/images/orgatec.png" },
-  { name: "KAZA Logistics", logo: "/images/kaza.png" },
-  { name: "Eclipse Mold, Inc.", logo: "/images/exlipse.png" },
-  { name: "Hirotai", logo: "/images/hirotai.png" },
-  { name: "Pack3000", logo: "/images/pack3000.png" },
+  { name: "MEXEX", note: "50 años", logo: imagePath("mexex.png") },
+  { name: "Org@tec", logo: imagePath("orgatec.png") },
+  { name: "KAZA Logistics", logo: imagePath("kaza.png") },
+  { name: "Eclipse Mold, Inc.", logo: imagePath("exlipse.png") },
+  { name: "Hirotai", logo: imagePath("hirotai.png") },
+  { name: "Pack3000", logo: imagePath("pack3000.png") },
   { name: "DJGM S.A. de C.V." },
-  { name: "Almacenadora Mexico", logo: "/images/almacenadoramexico.png" },
+  { name: "Almacenadora Mexico", logo: imagePath("almacenadoramexico.png") },
   { name: "Lubrinor S.A. de C.V." },
-  { name: "Almex", logo: "/images/almex.png" },
+  { name: "Almex", logo: imagePath("almex.png") },
   { name: "Logistica Lex S. de R.L. de C.V." },
 ];
 

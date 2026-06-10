@@ -136,7 +136,7 @@ export default function QuoteForm() {
                   USA · Laredo, TX
                 </p>
                 <img
-                  src="/images/logo-leri-azul.png"
+                  src={`${process.env.PUBLIC_URL}/images/logo-leri-azul.png`}
                   alt="LERI Forwarding logo"
                   className="mb-5 h-14 w-full object-contain object-center"
                 />
@@ -156,7 +156,7 @@ export default function QuoteForm() {
                   MX · Nuevo Laredo
                 </p>
                 <img
-                  src="/images/logo-sv-azul.png"
+                  src={`${process.env.PUBLIC_URL}/images/logo-sv-azul.png`}
                   alt="Salinas Vela logo"
                   className="mb-5 h-14 w-full object-contain object-center"
                 />
@@ -324,7 +324,7 @@ export default function QuoteForm() {
                   USA Â· Laredo, TX
                 </p>
                 <img
-                  src="/images/logo-leri-azul.png"
+                  src={`${process.env.PUBLIC_URL}/images/logo-leri-azul.png`}
                   alt="LERI Forwarding logo"
                   className="mb-5 h-14 w-full object-contain object-center"
                 />
@@ -344,7 +344,7 @@ export default function QuoteForm() {
                   MX Â· Nuevo Laredo
                 </p>
                 <img
-                  src="/images/logo-sv-azul.png"
+                  src={`${process.env.PUBLIC_URL}/images/logo-sv-azul.png`}
                   alt="Salinas Vela logo"
                   className="mb-5 h-14 w-full object-contain object-center"
                 />

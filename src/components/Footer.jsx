@@ -56,7 +56,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-4">
             <img
-              src="/images/logo_solo.png"
+              src={`${process.env.PUBLIC_URL}/images/logo_solo.png`}
               alt="Grupo LERI logo"
               className="mb-6 h-12 w-[8.4rem] object-fill object-left"
             />

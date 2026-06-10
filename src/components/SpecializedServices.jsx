@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
-const WAREHOUSE_IMG = "/images/warehouse-logistics.jpeg";
+const WAREHOUSE_IMG = `${process.env.PUBLIC_URL}/images/warehouse-logistics.jpeg`;
 
 export default function SpecializedServices() {
   const { lang, t } = useLanguage();

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
-const HERO_BG = "/images/header.png";
+const HERO_BG = `${process.env.PUBLIC_URL}/images/header.png`;
 
 export default function Hero() {
   const { t } = useLanguage();
