@@ -8,6 +8,7 @@ import Clients from "../components/Clients";
 import Testimonials from "../components/Testimonials";
 import QuoteForm from "../components/QuoteForm";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Landing() {
   return (
@@ -22,6 +23,7 @@ export default function Landing() {
       <Testimonials />
       <QuoteForm />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }
